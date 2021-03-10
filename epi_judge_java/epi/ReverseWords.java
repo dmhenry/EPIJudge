@@ -20,8 +20,8 @@ public class ReverseWords {
 
     private static void reverse(char[] input, int left, int right) {
         while (left < right) {
-            char temp = input[left];
-            input[left++] = input[right];
+            char temp      = input[left];
+            input[left++]  = input[right];
             input[right--] = temp;
         }
     }
