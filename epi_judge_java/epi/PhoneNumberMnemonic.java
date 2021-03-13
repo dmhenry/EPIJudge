@@ -5,28 +5,13 @@ import epi.test_framework.EpiTestComparator;
 import epi.test_framework.GenericTest;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class PhoneNumberMnemonic {
 
-    private static final Map<Character, List<Character>> charsByNum = new HashMap<>();
+    private static final String[] KEY_MAPPINGS = {"0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
 
-    static {
-        charsByNum.put('0', Collections.singletonList('0'));
-        charsByNum.put('1', Collections.singletonList('1'));
-        charsByNum.put('2', Arrays.asList('A', 'B', 'C'));
-        charsByNum.put('3', Arrays.asList('D', 'E', 'F'));
-        charsByNum.put('4', Arrays.asList('G', 'H', 'I'));
-        charsByNum.put('5', Arrays.asList('J', 'K', 'L'));
-        charsByNum.put('6', Arrays.asList('M', 'N', 'O'));
-        charsByNum.put('7', Arrays.asList('P', 'Q', 'R', 'S'));
-        charsByNum.put('8', Arrays.asList('T', 'U', 'V'));
-        charsByNum.put('9', Arrays.asList('W', 'X', 'Y', 'Z'));
-    }
 
     @EpiTest(testDataFile = "phone_number_mnemonic.tsv")
     public static List<String> phoneMnemonic(String phoneNumber) {
@@ -35,15 +20,18 @@ public class PhoneNumberMnemonic {
         return results;
     }
 
-    private static void addMnemonicRecur(String phoneNumber, int i, String mnemonicPrefix, List<String> results) {
-        char digit = phoneNumber.charAt(i);
-        List<Character> keyLetters = charsByNum.get(digit);
+    private static void addMnemonicRecur(String phoneNumber, int index, String mnemonicPrefix, List<String> results) {
+        int key = phoneNumber.charAt(index) - '0';
+        char letter;
 
-        for (Character letter : keyLetters) {
-            if (i == phoneNumber.length() - 1) {
+        String keyLetters = KEY_MAPPINGS[key];
+
+        for (int i = 0; i < keyLetters.length(); i++) {
+            letter = keyLetters.charAt(i);
+            if (index == phoneNumber.length() - 1) {
                 results.add(mnemonicPrefix + letter);
             } else {
-                addMnemonicRecur(phoneNumber, i + 1, mnemonicPrefix + letter, results);
+                addMnemonicRecur(phoneNumber, index + 1, mnemonicPrefix + letter, results);
             }
         }
     }
