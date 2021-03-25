@@ -6,6 +6,7 @@ import epi.test_framework.GenericTest;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.function.BiFunction;
+import java.util.function.ToIntBiFunction;
 
 public class EvaluateRpn {
 
@@ -22,7 +23,7 @@ public class EvaluateRpn {
             } else {
                 op1 = stack.pop();
                 op0 = stack.pop();
-                stack.push(op.fn.apply(op0, op1));
+                stack.push(op.fn.applyAsInt(op0, op1));
             }
         }
         return (stack.isEmpty()) ? -1 : stack.pop();
@@ -34,22 +35,18 @@ public class EvaluateRpn {
         MULT((multiplicand, multiplier) -> multiplicand * multiplier),
         DIV((dividend, divisor) -> dividend / divisor);
 
-        Operator(BiFunction<Integer, Integer, Integer> fn) {
+        Operator(ToIntBiFunction<Integer, Integer> fn) {
             this.fn = fn;
         }
 
-        private final BiFunction<Integer, Integer, Integer> fn;
+        private final ToIntBiFunction<Integer, Integer> fn;
 
         private static Operator of(String token) {
             switch (token) {
-                case "+":
-                    return ADD;
-                case "-":
-                    return SUB;
-                case "*":
-                    return MULT;
-                case "/":
-                    return DIV;
+                case "+": return ADD;
+                case "-": return SUB;
+                case "*": return MULT;
+                case "/": return DIV;
             }
             return null;
         }
