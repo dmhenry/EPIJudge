@@ -4,8 +4,8 @@ import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 
 public class RomanToInteger {
-    @EpiTest(testDataFile = "roman_to_integer.tsv")
 
+    @EpiTest(testDataFile = "roman_to_integer.tsv")
     public static int romanToInteger(String s) {
         int value = 0;
         RomanNumeral curr = RomanNumeral.of(s.charAt(0)), next;

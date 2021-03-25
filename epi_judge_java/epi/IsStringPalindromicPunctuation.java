@@ -4,8 +4,8 @@ import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 
 public class IsStringPalindromicPunctuation {
-    @EpiTest(testDataFile = "is_string_palindromic_punctuation.tsv")
 
+    @EpiTest(testDataFile = "is_string_palindromic_punctuation.tsv")
     public static boolean isPalindrome(String s) {
         int left = 0, right = s.length() - 1;
         while (left < right) {

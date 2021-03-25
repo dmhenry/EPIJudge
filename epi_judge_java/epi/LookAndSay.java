@@ -6,7 +6,6 @@ import epi.test_framework.GenericTest;
 public class LookAndSay {
 
     @EpiTest(testDataFile = "look_and_say.tsv")
-
     public static String lookAndSay(int n) {
         String input = "1";
         if (n == 1)

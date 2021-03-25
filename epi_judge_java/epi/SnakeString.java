@@ -4,8 +4,8 @@ import epi.test_framework.EpiTest;
 import epi.test_framework.GenericTest;
 
 public class SnakeString {
-    @EpiTest(testDataFile = "snake_string.tsv")
 
+    @EpiTest(testDataFile = "snake_string.tsv")
     public static String snakeString(String s) {
         StringBuilder result = new StringBuilder();
 
