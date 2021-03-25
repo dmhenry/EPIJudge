@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55145ef-a429-4b13-9807-c0f7ba2e20c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/EvaluateRpn.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/EvaluateRpn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/ValidIpAddresses.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/ValidIpAddresses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../problem_mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/../problem_mapping.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,35 +33,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.StackWithMax">
-    <configuration name="DutchNationalFlag (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.DutchNationalFlag" />
-      <module name="epi_judge_java_solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="epi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DutchNationalFlag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.DutchNationalFlag" />
-      <module name="epi_judge_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="epi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntAsArrayIncrement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.IntAsArrayIncrement" />
+  <component name="RunManager" selected="Application.EvaluateRpn">
+    <configuration name="EvaluateRpn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.EvaluateRpn" />
       <module name="epi_judge_java" />
       <extension name="coverage">
         <pattern>
@@ -73,6 +50,25 @@
     <configuration name="StackWithMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epi.StackWithMax" />
       <module name="epi_judge_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringIntegerInterconversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.StringIntegerInterconversion" />
+      <module name="epi_judge_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,6 +76,25 @@
     <configuration name="SubstringMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epi.SubstringMatch" />
       <module name="epi_judge_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidIpAddresses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.ValidIpAddresses" />
+      <module name="epi_judge_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StackWithMax" />
-        <item itemvalue="Application.IntAsArrayIncrement" />
-        <item itemvalue="Application.DutchNationalFlag" />
-        <item itemvalue="Application.DutchNationalFlag (1)" />
+        <item itemvalue="Application.EvaluateRpn" />
+        <item itemvalue="Application.ValidIpAddresses" />
         <item itemvalue="Application.SubstringMatch" />
+        <item itemvalue="Application.StringIntegerInterconversion" />
+        <item itemvalue="Application.StackWithMax" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +136,7 @@
       <workItem from="1615227386151" duration="16847000" />
       <workItem from="1615287573831" duration="18490000" />
       <workItem from="1615571188246" duration="27047000" />
-      <workItem from="1616630753647" duration="6794000" />
+      <workItem from="1616630753647" duration="8923000" />
     </task>
     <servers />
   </component>

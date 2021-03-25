@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ValidIpAddresses {
-    
+
     @EpiTest(testDataFile = "valid_ip_addresses.tsv")
     public static List<String> getValidIpAddress(String s) {
         List<String> result = new ArrayList<>();
