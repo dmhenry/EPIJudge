@@ -934,7 +934,7 @@ problem_mapping = {
                 "total": 101
             },
             "Java: SunsetView.java": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Python: sunset_view.py": {
