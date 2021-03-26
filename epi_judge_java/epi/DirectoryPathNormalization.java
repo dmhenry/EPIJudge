@@ -5,6 +5,7 @@ import epi.test_framework.GenericTest;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Iterator;
 
 public class DirectoryPathNormalization {
 
@@ -38,10 +39,14 @@ public class DirectoryPathNormalization {
         }
 
         StringBuilder result = new StringBuilder();
-        while (!stack.isEmpty()) {
-            result.insert(0, stack.pop());
-            if (!stack.isEmpty() && !("/").equals(stack.peek())) {
-                result.insert(0, "/");
+        Iterator<String> iter = stack.descendingIterator();
+        String next;
+
+        while (iter.hasNext()) {
+            next = iter.next();
+            result.append(next);
+            if (!PATH_SEPARATOR.equals(next) && iter.hasNext()) {
+                result.append(PATH_SEPARATOR);
             }
         }
         return result.toString();
