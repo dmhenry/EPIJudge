@@ -5,22 +5,34 @@ import epi.test_framework.EpiUserType;
 import epi.test_framework.GenericTest;
 import epi.test_framework.TestFailure;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 public class QueueFromStacks {
 
     public static class Queue {
+
+        private final Deque<Integer> main = new ArrayDeque<>();
+        private final Deque<Integer> aux = new ArrayDeque<>();
+
         public void enqueue(Integer x) {
-            // TODO - you fill in here.
-            return;
+            while (!main.isEmpty()) {
+                aux.push(main.pop());
+            }
+            main.push(x);
+            while (!aux.isEmpty()) {
+                main.push(aux.pop());
+            }
         }
 
         public Integer dequeue() {
-            // TODO - you fill in here.
-            return 0;
+            if (main.isEmpty())
+                throw new IllegalStateException();
+            return main.pop();
         }
-       
+
     }
 
     @EpiUserType(ctorParams = {String.class, int.class})
