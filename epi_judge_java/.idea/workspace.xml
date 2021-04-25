@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55145ef-a429-4b13-9807-c0f7ba2e20c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epi/IsTreeBalanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/IsTreeBalanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/IsTreeSymmetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/IsTreeSymmetric.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +30,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.IsTreeBalanced">
-    <configuration name="CircularQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.CircularQueue" />
+  <component name="RunManager" selected="Application.IsTreeSymmetric">
+    <configuration name="IsTreeBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.IsTreeBalanced" />
       <module name="epi_judge_java" />
       <extension name="coverage">
         <pattern>
@@ -45,8 +44,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsTreeBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.IsTreeBalanced" />
+    <configuration name="IsTreeSymmetric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.IsTreeSymmetric" />
       <module name="epi_judge_java" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsTreeSymmetric" />
         <item itemvalue="Application.IsTreeBalanced" />
         <item itemvalue="Application.QueueWithMax (1)" />
         <item itemvalue="Application.QueueWithMax" />
         <item itemvalue="Application.QueueFromStacks" />
-        <item itemvalue="Application.CircularQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +135,7 @@
       <workItem from="1615571188246" duration="27047000" />
       <workItem from="1616630753647" duration="11182000" />
       <workItem from="1616771184452" duration="17535000" />
-      <workItem from="1619357748331" duration="809000" />
+      <workItem from="1619357748331" duration="1810000" />
     </task>
     <servers />
   </component>
