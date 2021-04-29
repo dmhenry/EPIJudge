@@ -14,44 +14,21 @@ public class LowestCommonAncestor {
     public static BinaryTreeNode<Integer> lca(BinaryTreeNode<Integer> tree,
                                               BinaryTreeNode<Integer> node0,
                                               BinaryTreeNode<Integer> node1) {
-
-        List<BinaryTreeNode<Integer>> path0 = new ArrayList<>();
-        List<BinaryTreeNode<Integer>> path1 = new ArrayList<>();
-
-        findPath(tree, node0, path0);
-        findPath(tree, node1, path1);
-
-        List<BinaryTreeNode<Integer>> shorter = (path1.size() < path0.size()) ? path1 : path0;
-        BinaryTreeNode<Integer> result = tree;
-
-        int i;
-        for (i = 1; i < shorter.size(); i++) {
-            if (!path0.get(i).equals(path1.get(i))) {
-                result = path0.get(i - 1);
-                break;
-            }
-        }
-        if (i == shorter.size()) {
-            result = shorter.get(i - 1);
-        }
-        return result;
-    }
-
-    private static boolean findPath(BinaryTreeNode<Integer> tree, BinaryTreeNode<Integer> key, List<BinaryTreeNode<Integer>> path) {
         if (tree == null)
-            return false;
+            return null;
 
-        path.add(tree);
+        if (tree == node0 || tree == node1)
+            return tree;
 
-        if (key.getData().equals(tree.getData()))
-            return true;
+        BinaryTreeNode<Integer> left = lca(tree.getLeft(), node0, node1);
+        BinaryTreeNode<Integer> right = lca(tree.getRight(), node0, node1);
 
-        if (findPath(tree.getLeft(), key, path) || findPath(tree.getRight(), key, path))
-            return true;
-
-        path.remove(path.size() - 1);
-
-        return false;
+        if (left != null && right != null) {
+            return tree;
+        } else if (left != null) {
+            return left;
+        }
+        return right;
     }
 
     @EpiTest(testDataFile = "lowest_common_ancestor.tsv")
