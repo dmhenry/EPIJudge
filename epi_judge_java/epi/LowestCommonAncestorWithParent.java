@@ -20,9 +20,9 @@ public class LowestCommonAncestorWithParent {
             node1 = temp;
         }
 
-        while (depth1 > depth0) {
+        int delta = Math.abs(depth0 - depth1);
+        while (delta-- > 0) {
             node1 = node1.parent;
-            depth1--;
         }
 
         while (node0 != node1) {
