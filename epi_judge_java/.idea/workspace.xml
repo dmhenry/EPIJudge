@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d55145ef-a429-4b13-9807-c0f7ba2e20c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/LowestCommonAncestorWithParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/LowestCommonAncestorWithParent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,7 @@
       <workItem from="1616771184452" duration="17535000" />
       <workItem from="1619357748331" duration="3327000" />
       <workItem from="1619655176572" duration="65000" />
-      <workItem from="1619655268674" duration="3801000" />
+      <workItem from="1619655268674" duration="5338000" />
     </task>
     <servers />
   </component>
