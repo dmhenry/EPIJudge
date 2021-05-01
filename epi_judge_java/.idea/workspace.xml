@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d55145ef-a429-4b13-9807-c0f7ba2e20c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/epi/TreeInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/TreeInorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/KthNodeInTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/KthNodeInTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +39,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TreeInorder">
-    <configuration name="LowestCommonAncestor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.LowestCommonAncestor" />
+  <component name="RunManager" selected="Application.KthNodeInTree">
+    <configuration name="KthNodeInTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.KthNodeInTree" />
       <module name="epi_judge_java" />
       <extension name="coverage">
         <pattern>
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KthNodeInTree" />
         <item itemvalue="Application.TreeInorder" />
         <item itemvalue="Application.PathSum" />
         <item itemvalue="Application.LowestCommonAncestorWithParent" />
         <item itemvalue="Application.SumRootToLeaf" />
-        <item itemvalue="Application.LowestCommonAncestor" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +144,7 @@
       <workItem from="1616771184452" duration="17535000" />
       <workItem from="1619357748331" duration="3327000" />
       <workItem from="1619655176572" duration="65000" />
-      <workItem from="1619655268674" duration="11184000" />
+      <workItem from="1619655268674" duration="14862000" />
     </task>
     <servers />
   </component>
@@ -176,6 +177,10 @@
         <breakpoint type="java-exception">
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="67" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="89" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
