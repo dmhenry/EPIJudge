@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d55145ef-a429-4b13-9807-c0f7ba2e20c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epi/SuccessorInTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/SuccessorInTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epi/TreeWithParentInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/epi/TreeWithParentInorder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +39,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.SuccessorInTree">
+  <component name="RunManager" selected="Application.TreeWithParentInorder">
     <configuration name="KthNodeInTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="epi.KthNodeInTree" />
-      <module name="epi_judge_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="epi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LowestCommonAncestorWithParent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="epi.LowestCommonAncestorWithParent" />
       <module name="epi_judge_java" />
       <extension name="coverage">
         <pattern>
@@ -105,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreeWithParentInorder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="epi.TreeWithParentInorder" />
+      <module name="epi_judge_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="epi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -118,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeWithParentInorder" />
         <item itemvalue="Application.SuccessorInTree" />
         <item itemvalue="Application.KthNodeInTree" />
         <item itemvalue="Application.TreeInorder" />
         <item itemvalue="Application.PathSum" />
-        <item itemvalue="Application.LowestCommonAncestorWithParent" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +144,7 @@
       <workItem from="1616771184452" duration="17535000" />
       <workItem from="1619357748331" duration="3327000" />
       <workItem from="1619655176572" duration="65000" />
-      <workItem from="1619655268674" duration="20362000" />
+      <workItem from="1619655268674" duration="22155000" />
     </task>
     <servers />
   </component>
